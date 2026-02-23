@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-heading {
+  font-family: "Satoshi", sans-serif;
+}
+
+/* animations */
+@keyframes glowOne {
+  0% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.04); }
+  100% { opacity: 0.15; transform: scale(1); }
+}
+
+@keyframes glowTwo {
+  0% { opacity: 0.25; transform: scale(1.04); }
+  50% { opacity: 0.15; transform: scale(1); }
+  100% { opacity: 0.25; transform: scale(1.04); }
+}
+
+@keyframes headerFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-headerFade {
+  animation: headerFade 0.8s ease forwards;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
