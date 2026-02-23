@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./components/Loader";
-import Header from "./components/Header";
+
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
@@ -28,7 +28,7 @@ function App() {
 
       {!loading && (
         <>
-          {/* <Heade r /> */}
+          {/* <Header /> */}
           <Hero />
           <About />
           <Projects />
